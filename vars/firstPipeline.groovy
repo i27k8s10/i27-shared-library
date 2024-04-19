@@ -21,6 +21,11 @@ def call(Map pipelineParams){
                     echo "Sending a mail !!!!!!!!!!!!"
                 }
             }
+            stage ('Docker build') {
+                steps {
+                    echo "Docker build happening"
+                }
+            }
         }
     }
 }
